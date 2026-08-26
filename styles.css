@@ -475,7 +475,7 @@ a {
 .edu {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   padding: 1.6rem;
   border-radius: var(--radius);
@@ -529,7 +529,13 @@ a {
 
 @media (min-width: 901px) {
   .contact-link-download {
-    grid-column: 1 / -1;
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .edu {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -566,6 +572,15 @@ a {
 .contact-link-download {
   background: rgba(13, 148, 136, 0.22);
   border-color: rgba(167, 243, 208, 0.35);
+}
+
+.contact-link-static {
+  cursor: default;
+}
+
+.contact-link-static:hover {
+  transform: none;
+  background: rgba(255, 253, 248, 0.06);
 }
 
 .footer {
