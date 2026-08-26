@@ -219,7 +219,23 @@ a {
 
 .btn-ghost {
   border: 1px solid var(--line);
-  background: rgba(255, 253, 248, 0.55);
+  background: rgba(248, 251, 253, 0.7);
+}
+
+.btn-download {
+  gap: 0.45rem;
+  border: 1px solid rgba(13, 148, 136, 0.35);
+  background: rgba(13, 148, 136, 0.1);
+  color: var(--accent-deep);
+}
+
+.btn-download:hover {
+  background: rgba(13, 148, 136, 0.18);
+  color: var(--accent-deep);
+}
+
+.btn-download svg {
+  flex-shrink: 0;
 }
 
 .hero-visual {
@@ -511,6 +527,12 @@ a {
   gap: 1rem;
 }
 
+@media (min-width: 901px) {
+  .contact-link-download {
+    grid-column: 1 / -1;
+  }
+}
+
 .contact-link {
   display: flex;
   flex-direction: column;
@@ -539,6 +561,11 @@ a {
   font-weight: 600;
   font-size: 1rem;
   word-break: break-word;
+}
+
+.contact-link-download {
+  background: rgba(13, 148, 136, 0.22);
+  border-color: rgba(167, 243, 208, 0.35);
 }
 
 .footer {

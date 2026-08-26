@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Elkin Duran Moreno — Hoja de Vida</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 12mm; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 9.2pt;
+      line-height: 1.4;
+      color: #142033;
+      background: #fff;
+    }
+    .top {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 2.5px solid #0d9488;
+      margin-bottom: 14px;
+    }
+    .photo {
+      width: 92px;
+      height: 92px;
+      border-radius: 16px;
+      object-fit: cover;
+      object-position: center top;
+      flex-shrink: 0;
+    }
+    h1 {
+      font-size: 20pt;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+    .role {
+      font-size: 11pt;
+      color: #0f766e;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .contact {
+      color: #445468;
+      font-size: 8.5pt;
+    }
+    .contact span { margin-right: 10px; }
+    .summary {
+      margin-bottom: 14px;
+      color: #3a4658;
+    }
+    h2 {
+      font-size: 10.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #12243d;
+      border-bottom: 1px solid #d5dde6;
+      padding-bottom: 3px;
+      margin: 12px 0 8px;
+    }
+    .job { margin-bottom: 10px; page-break-inside: avoid; }
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 2px;
+    }
+    .job-title { font-weight: 700; font-size: 9.8pt; }
+    .job-meta { color: #0f766e; font-size: 8.5pt; margin-bottom: 4px; }
+    .dates { color: #64748b; font-size: 8.5pt; white-space: nowrap; }
+    ul { padding-left: 15px; }
+    li { margin-bottom: 2px; color: #334155; }
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+    }
+    .skill-box {
+      background: #f1f5f9;
+      border-radius: 8px;
+      padding: 8px 10px;
+    }
+    .skill-box strong {
+      display: block;
+      font-size: 8.5pt;
+      margin-bottom: 3px;
+      color: #0f766e;
+    }
+    .skill-box span { font-size: 8pt; color: #475569; }
+    .edu { margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <img class="photo" src="assets/fotoeduran.png" alt="Elkin Duran Moreno" />
+    <div>
+      <h1>Elkin Duran Moreno</h1>
+      <div class="role">Ingeniero de IA &amp; Automatización</div>
+      <div class="contact">
+        <span>Bogotá / Barrancabermeja, Colombia</span>
+        <span>321 417 0011</span>
+        <span>elkinduranm@hotmail.com</span>
+        <span>linkedin.com/in/elkinduran</span>
+        <span>github.com/elkindm</span>
+      </div>
+    </div>
+  </header>
+
+  <p class="summary">
+    Ingeniero de Sistemas con más de una década construyendo plataformas empresariales.
+    Especializado en automatización con modelos LLM, orquestación de flujos (n8n) e integración
+    de IA generativa en operaciones BPO, CRM y sistemas de negocio.
+  </p>
+
+  <h2>Capacidades</h2>
+  <div class="skills">
+    <div class="skill-box">
+      <strong>Inteligencia artificial</strong>
+      <span>LLMs, n8n, agentes, automatización de procesos, Spec-Driven Development</span>
+    </div>
+    <div class="skill-box">
+      <strong>Ingeniería de software</strong>
+      <span>Spring Boot, Java, .NET Core, Angular, React, APIs REST, microservicios</span>
+    </div>
+    <div class="skill-box">
+      <strong>Datos e infraestructura</strong>
+      <span>PostgreSQL, MySQL, MongoDB, Docker, Jenkins, CI/CD, Python, MQTT</span>
+    </div>
+  </div>
+
+  <h2>Experiencia laboral</h2>
+
+  <article class="job">
+    <div class="job-head">
+      <div class="job-title">Ingeniero de Desarrollo · Automatización con IA</div>
+      <div class="dates">Jun 2020 — Actualidad</div>
+    </div>
+    <div class="job-meta">Millenium BPO · Bogotá D.C.</div>
+    <ul>
+      <li>Automatización de procesos con modelos LLM, n8n y herramientas de orquestación.</li>
+      <li>Desarrollo web con Spring Boot y Angular (microservicios y micro frontends).</li>
+      <li>Evolución de CRM e IVR: funcionalidades, soporte y estabilidad en contact center.</li>
+      <li>CI/CD, code review, pruebas unitarias y documentación de arquitectura.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head">
+      <div class="job-title">Ingeniero I+D+i</div>
+      <div class="dates">May 2019 — Mar 2020</div>
+    </div>
+    <div class="job-meta">Compañía Internacional de Integración CI2 · Bogotá D.C.</div>
+    <ul>
+      <li>Productos y PoCs con análisis de datos experimentales y vigilancia tecnológica.</li>
+      <li>Integraciones IoT: WebService JSON hacia servicios Google vía MQTT.</li>
+      <li>Soluciones móviles y de video (C#, ASP.NET ZERO, Java).</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head">
+      <div class="job-title">Ingeniero de Sistemas</div>
+      <div class="dates">Feb 2017 — Feb 2019</div>
+    </div>
+    <div class="job-meta">CAFABA — Caja de Compensación Familiar · Barrancabermeja</div>
+    <ul>
+      <li>Plataformas web para crédito social, FOVIS, FOSFEC y CRM comercial.</li>
+      <li>Procesamiento de archivos planos/Excel e integración contable.</li>
+      <li>Automatización con Python, Bash y PowerShell; Docker y CI/CD.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head">
+      <div class="job-title">Ingeniero de Sistemas</div>
+      <div class="dates">Ene 2015 — Dic 2015</div>
+    </div>
+    <div class="job-meta">Consultorio Dra. Nancy Ester King Aragón · Barrancabermeja</div>
+    <ul>
+      <li>Aplicación de gestión clínica en Java y MariaDB; soporte de infraestructura.</li>
+    </ul>
+  </article>
+
+  <h2>Formación</h2>
+  <div class="edu"><strong>Ingeniero de Sistemas</strong> — Universitaria de Investigación y Desarrollo (UDI), Barrancabermeja · 2015</div>
+  <div class="edu"><strong>Tecnólogo de Sistemas</strong> — UDI, Barrancabermeja · 2015</div>
+</body>
+</html>
