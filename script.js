@@ -38,9 +38,19 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.08, rootMargin: "0px 0px -8% 0px" }
     );
     reveals.forEach((el) => observer.observe(el));
+    // Contenido above-the-fold: mostrar de inmediato
+    requestAnimationFrame(() => {
+      reveals.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.92) {
+          el.classList.add("is-visible");
+          observer.unobserve(el);
+        }
+      });
+    });
   } else {
     reveals.forEach((el) => el.classList.add("is-visible"));
   }
