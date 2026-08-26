@@ -44,8 +44,18 @@
     .contact {
       color: #445468;
       font-size: 8.5pt;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px 0;
     }
-    .contact span { margin-right: 10px; }
+    .contact span {
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .contact .address {
+      flex-basis: 100%;
+      margin: 2px 0 2px;
+    }
     .license {
       margin-top: 6px;
       font-size: 8.2pt;
@@ -106,7 +116,7 @@
       <div class="role">Ingeniero de IA &amp; Automatización</div>
       <div class="contact">
         <span>C.C. 1096194935</span>
-        <span>Bogotá / Barrancabermeja, Colombia</span>
+        <span class="address">Carrera 32a No 27-33, Barrio el Limonar, Barrancabermeja, Santander</span>
         <span>321 417 0011</span>
         <span>elkinduranm@hotmail.com</span>
         <span>linkedin.com/in/elkinduran</span>
