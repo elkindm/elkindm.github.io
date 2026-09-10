@@ -11,14 +11,15 @@
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
+  <div class="mesh" aria-hidden="true"></div>
 
   <header class="nav">
-    <a class="nav-brand" href="#inicio">Elkin Duran</a>
+    <a class="nav-brand" href="#inicio">Elkin<span>Duran</span></a>
     <nav class="nav-links" aria-label="Principal">
       <a href="#enfoque">Enfoque</a>
       <a href="#impacto">Impacto</a>
@@ -34,33 +35,30 @@
 
   <main>
     <section class="hero" id="inicio">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/fotoeduran.png" alt="" width="1200" height="1400" />
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-copy">
-        <p class="hero-eyebrow reveal">Colombia · Remoto</p>
-        <h1 class="reveal delay-1">Elkin Duran<span class="hero-accent"> Moreno</span></h1>
-        <p class="hero-role reveal delay-2">Ingeniero de IA &amp; Automatización</p>
-        <p class="hero-lead reveal delay-3">
-          Ayudo a empresas a reducir costos operativos y optimizar CRM y BPO
-          con inteligencia artificial y orquestación n8n: flujos que diagnostican,
-          clasifican y automatizan trabajo repetitivo sobre backends reales.
+        <p class="hero-eyebrow">Colombia · Remoto</p>
+        <h1>
+          <span class="hero-name">Elkin Duran</span>
+          <span class="hero-surname">Moreno</span>
+        </h1>
+        <p class="hero-role">Ingeniero de IA &amp; Automatización</p>
+        <p class="hero-lead">
+          Reduzco costos operativos en CRM y BPO con IA y n8n:
+          flujos que diagnostican, clasifican y automatizan trabajo
+          repetitivo sobre backends reales.
         </p>
-        <div class="hero-actions reveal delay-4">
+        <div class="hero-actions">
           <a class="btn btn-primary" href="#contacto">Hablemos</a>
           <a class="btn btn-download" href="assets/Elkin_Duran_Moreno_HV.pdf" download="Elkin_Duran_Moreno_Hoja_de_Vida.pdf">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M12 3v12m0 0l4-4m-4 4l-4-4M5 19h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            Descargar HV (PDF)
+            Descargar HV
           </a>
-          <a class="btn btn-ghost" href="#experiencia">Ver trayectoria</a>
-        </div>
-      </div>
-      <div class="hero-visual reveal delay-2" aria-hidden="false">
-        <div class="hero-frame">
-          <img src="assets/fotoeduran.png" alt="Retrato profesional de Elkin Duran Moreno" width="560" height="560" />
-        </div>
-        <div class="hero-badge">
-          <span class="badge-label">Impacto medido</span>
-          <strong>−75 % en tiempo de diagnóstico</strong>
         </div>
       </div>
     </section>
@@ -75,21 +73,27 @@
           que conectan IA con el software que ya opera el negocio.
         </p>
       </div>
-      <div class="focus-grid">
-        <article class="focus-card reveal">
+      <div class="focus-list">
+        <article class="focus-item reveal">
           <span class="focus-num">01</span>
-          <h3>Automatización con LLMs</h3>
-          <p>Agentes que diagnostican incidentes CRM, clasifican trabajo y generan evidencia lista para el cliente, en minutos en lugar de horas.</p>
+          <div>
+            <h3>Automatización con LLMs</h3>
+            <p>Agentes que diagnostican incidentes CRM, clasifican trabajo y generan evidencia lista para el cliente, en minutos en lugar de horas.</p>
+          </div>
         </article>
-        <article class="focus-card reveal delay-1">
+        <article class="focus-item reveal delay-1">
           <span class="focus-num">02</span>
-          <h3>Orquestación n8n</h3>
-          <p>Workflows de correo, facturación y onboarding de tickets que conectan LLMs con microservicios Spring Boot, GLPI y APIs existentes.</p>
+          <div>
+            <h3>Orquestación n8n</h3>
+            <p>Workflows de correo, facturación y onboarding de tickets que conectan LLMs con microservicios Spring Boot, GLPI y APIs existentes.</p>
+          </div>
         </article>
-        <article class="focus-card reveal delay-2">
+        <article class="focus-item reveal delay-2">
           <span class="focus-num">03</span>
-          <h3>Ingeniería aplicada</h3>
-          <p>Backend corporativo (Java/Spring, .NET) para llevar la IA a producción sin tocar el core CTI ni improvisar sobre sistemas críticos.</p>
+          <div>
+            <h3>Ingeniería aplicada</h3>
+            <p>Backend corporativo (Java/Spring, .NET) para llevar la IA a producción sin tocar el core CTI ni improvisar sobre sistemas críticos.</p>
+          </div>
         </article>
       </div>
     </section>
@@ -103,26 +107,26 @@
           nov 2025 – sep 2026): tiempo de diagnóstico del ingeniero, no SLA del contact center.
         </p>
       </div>
-      <div class="impact-grid">
-        <article class="impact-card reveal">
-          <strong>−75 %</strong>
+      <div class="impact-strip">
+        <article class="impact-stat reveal">
+          <strong data-count="-75" data-suffix=" %">−75 %</strong>
           <h3>Mediana de diagnóstico</h3>
-          <p>De 36 a 9 minutos con el flujo de agente IA maduro (jul–sep 2026). El 74 % de los casos cronometrados se resolvió en 15 minutos o menos.</p>
+          <p>De 36 a 9 minutos con el flujo de agente IA maduro. El 74 % de los casos cronometrados se resolvió en ≤15 min.</p>
         </article>
-        <article class="impact-card reveal delay-1">
-          <strong>−28 %</strong>
+        <article class="impact-stat reveal delay-1">
+          <strong data-count="-28" data-suffix=" %">−28 %</strong>
           <h3>Horas por ticket</h3>
-          <p>Soporte DCN-5 en Jira: de 2,10 h a 1,52 h (2025 vs 2026). La evidencia adjunta pasó de 7 % a 59 % de los casos.</p>
+          <p>Soporte DCN-5 en Jira: de 2,10 h a 1,52 h. La evidencia adjunta pasó de 7 % a 59 %.</p>
         </article>
-        <article class="impact-card reveal delay-2">
-          <strong>181</strong>
+        <article class="impact-stat reveal delay-2">
+          <strong data-count="181" data-suffix="">181</strong>
           <h3>Tickets con flujo IA</h3>
-          <p>Incidentes CRM documentados con el mismo método (prompts, BD, SSH). En 2026, 48 historias de desarrollo además del soporte.</p>
+          <p>Incidentes CRM documentados con el mismo método. En 2026, 48 historias de desarrollo además del soporte.</p>
         </article>
-        <article class="impact-card reveal delay-3">
-          <strong>7</strong>
+        <article class="impact-stat reveal delay-3">
+          <strong data-count="7" data-suffix="">7</strong>
           <h3>Workflows n8n</h3>
-          <p>Correo Microsoft, PDF de facturas y diagnóstico GLPI sobre Spring Boot. Automatizo islas de valor; no el marcador ni el IVR.</p>
+          <p>Correo Microsoft, PDF de facturas y diagnóstico GLPI. Automatizo islas de valor; no el marcador ni el IVR.</p>
         </article>
       </div>
     </section>
