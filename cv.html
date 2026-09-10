@@ -64,8 +64,31 @@
     }
     .license strong { color: #12243d; }
     .summary {
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       color: #3a4658;
+    }
+    .impact {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin: 0 0 14px;
+    }
+    .impact-item {
+      background: #f0fdfa;
+      border: 1px solid #99f6e4;
+      border-radius: 8px;
+      padding: 8px 10px;
+    }
+    .impact-item strong {
+      display: block;
+      font-size: 13pt;
+      color: #0f766e;
+      line-height: 1.1;
+    }
+    .impact-item span {
+      font-size: 7.4pt;
+      color: #475569;
+      line-height: 1.3;
     }
     h2 {
       font-size: 10.5pt;
@@ -113,27 +136,48 @@
     <img class="photo" src="assets/fotoeduran.png" alt="Elkin Duran Moreno" />
     <div>
       <h1>Elkin Duran Moreno</h1>
-      <div class="role">Ingeniero de IA &amp; Automatización</div>
+      <div class="role">Ingeniero de IA &amp; Automatización · CRM / BPO</div>
       <div class="contact">
-        <span>C.C. 1096194935</span>
-        <span class="address">Carrera 32a No 27-33, Barrio el Limonar, Barrancabermeja, Santander</span>
-        <span>321 417 0011</span>
+        <span>Colombia · Remoto</span>
+        <span class="address">Carrera 32a #27-33, Barrancabermeja, Santander</span>
+        <span>+57 321 417 0011</span>
         <span>elkinduranm@hotmail.com</span>
         <span>linkedin.com/in/elkinduran</span>
         <span>github.com/elkindm</span>
+        <span>elkindm.github.io</span>
       </div>
       <div class="license">
         Matrícula profesional COPNIA No. <strong>68255-332738 STD</strong>
-        · Ingeniero de Sistemas · Expedida 03/06/2016 · Ley 842 de 2003
+        · Ingeniero de Sistemas · Expedida 03/06/2016
       </div>
     </div>
   </header>
 
   <p class="summary">
-    Ingeniero de Sistemas con más de una década construyendo plataformas empresariales.
-    Especializado en automatización con modelos LLM, orquestación de flujos (n8n) e integración
-    de IA generativa en operaciones BPO, CRM y sistemas de negocio.
+    Ingeniero de Sistemas con 11 años en plataformas empresariales. Ayudo a operaciones
+    BPO y CRM a reducir costos y tiempos con LLMs y n8n: en Millenium bajé la mediana
+    de diagnóstico de 36 a 9 min (−75 %) y las horas por ticket de soporte un 28 %,
+    conectando IA a backends reales (Java/Spring, .NET, APIs).
   </p>
+
+  <div class="impact">
+    <div class="impact-item">
+      <strong>−75 %</strong>
+      <span>Mediana de diagnóstico CRM (36 → 9 min)</span>
+    </div>
+    <div class="impact-item">
+      <strong>−28 %</strong>
+      <span>Horas por ticket de soporte (Jira DCN-5)</span>
+    </div>
+    <div class="impact-item">
+      <strong>181</strong>
+      <span>Incidentes documentados con flujo IA</span>
+    </div>
+    <div class="impact-item">
+      <strong>7</strong>
+      <span>Workflows n8n en correo, billing y GLPI</span>
+    </div>
+  </div>
 
   <h2>Capacidades</h2>
   <div class="skills">
@@ -160,10 +204,10 @@
     </div>
     <div class="job-meta">Millenium BPO · Bogotá D.C.</div>
     <ul>
-      <li>Automatización de procesos con modelos LLM, n8n y herramientas de orquestación.</li>
-      <li>Desarrollo web con Spring Boot y Angular (microservicios y micro frontends).</li>
-      <li>Evolución de CRM e IVR: funcionalidades, soporte y estabilidad en contact center.</li>
-      <li>CI/CD, code review, pruebas unitarias y documentación de arquitectura.</li>
+      <li>Con un flujo de agente IA (LLM, BD, SSH y evidencia) bajé la mediana de diagnóstico CRM de 36 a 9 min (−75 %); 181 tickets documentados y 74 % de casos cronometrados resueltos en ≤15 min (jul–sep 2026).</li>
+      <li>Reduje las horas imputadas por ticket de soporte un 28 % (2,10 h → 1,52 h, 2025 vs 2026) y subí la evidencia adjunta de 7 % a 59 % de los casos.</li>
+      <li>Orquesté 7 workflows n8n (organización de correo, PDF de facturas, diagnóstico GLPI) sobre microservicios Spring Boot, con impacto operativo y sin tocar el core CTI/IVR.</li>
+      <li>Evolucioné CRM e IVR en producción (Spring Boot, Angular, microservicios) y 48 historias en 2026 (mails agentic, SMS, Workforce); CI/CD y code review en equipo ágil.</li>
     </ul>
   </article>
 
@@ -174,9 +218,9 @@
     </div>
     <div class="job-meta">Compañía Internacional de Integración CI2 · Bogotá D.C.</div>
     <ul>
-      <li>Productos y PoCs con análisis de datos experimentales y vigilancia tecnológica.</li>
-      <li>Integraciones IoT: WebService JSON hacia servicios Google vía MQTT.</li>
-      <li>Soluciones móviles y de video (C#, ASP.NET ZERO, Java).</li>
+      <li>Diseñé productos y PoCs de I+D+i (IoT, móvil, video) a partir de requisitos de cliente e industria.</li>
+      <li>Implementé un WebService JSON que publica telemetría hacia servicios Google vía MQTT.</li>
+      <li>Entregué soluciones en C# / ASP.NET ZERO y Java móvil: conversión de certificados, evidencias en ruta y edición de video NVR.</li>
     </ul>
   </article>
 
@@ -187,9 +231,9 @@
     </div>
     <div class="job-meta">CAFABA — Caja de Compensación Familiar · Barrancabermeja</div>
     <ul>
-      <li>Plataformas web para crédito social, FOVIS, FOSFEC y CRM comercial.</li>
-      <li>Procesamiento de archivos planos/Excel e integración contable.</li>
-      <li>Automatización con Python, Bash y PowerShell; Docker y CI/CD.</li>
+      <li>Desarrollé las plataformas de crédito social, FOVIS, FOSFEC y CRM de promotoría, con reglas de negocio, trazabilidad y flujo de aprobación.</li>
+      <li>Integré créditos y subsidios con el sistema contable y con entidades externas mediante archivos planos y Excel.</li>
+      <li>Automaticé operación con Python, Bash y PowerShell; Docker y CI/CD para despliegue y tareas recurrentes.</li>
     </ul>
   </article>
 
@@ -200,16 +244,15 @@
     </div>
     <div class="job-meta">Consultorio Dra. Nancy Ester King Aragón · Barrancabermeja</div>
     <ul>
-      <li>Aplicación de gestión clínica en Java y MariaDB; soporte de infraestructura.</li>
+      <li>Desarrollé la aplicación de gestión clínica (citas, síntomas, tratamientos) en Java y MariaDB, y di soporte a la infraestructura del consultorio.</li>
     </ul>
   </article>
 
-  <h2>Formación y matrícula profesional</h2>
+  <h2>Formación</h2>
   <div class="edu"><strong>Ingeniero de Sistemas</strong> — Universitaria de Investigación y Desarrollo (UDI), Barrancabermeja · 2015</div>
   <div class="edu"><strong>Tecnólogo de Sistemas</strong> — UDI, Barrancabermeja · 2015</div>
   <div class="edu" style="margin-top:6px">
-    <strong>Tarjeta profesional COPNIA</strong> — Matrícula No. 68255-332738 STD · C.C. 1096194935
-    · Expedición 03/06/2016 · Autorizado para ejercer la ingeniería en Colombia (Ley 842 de 2003)
+    <strong>Matrícula profesional COPNIA</strong> — 68255-332738 STD · Ingeniero de Sistemas · Expedida 03/06/2016 (Colombia)
   </div>
 </body>
 </html>
